@@ -1,0 +1,27 @@
+{
+  "Environment": [
+    {
+      "EnvironmentName": "Test1",
+      "MoneyControl": {
+        "url": "https://www.moneycontrol.com/",
+        "password": "test123"
+      },
+      "Trendlyne": {
+        "url": "http://trendlyne.com/",
+        "password": "test1243"
+      }
+    },
+    {
+      "EnvironmentName": "Test2",
+      "TestingWebsite": {
+        "url": "https://www.google.com/"
+      }
+    },
+    {
+      "EnvironmentName": "Test3",
+      "Chartink": {
+        "url": "https://chartink.com/screeners"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.testng:testng:7.5'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    compileOnly 'io.cucumber:cucumber-jvm-deps:1.0.6'
+    implementation 'io.cucumber:cucumber-testng:7.8.0'
+    implementation 'org.testng:testng:7.6.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.5.0'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.2.0'
+    implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '5.2.2'
+    implementation 'io.qameta.allure:allure-testng:2.18.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+    implementation 'io.cucumber:cucumber-java:7.8.0'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+
+}
+
+test {
+    useTestNG() {
+        suites './src/test/resources/customTestNgXmls/test.xml'
+    }
+}

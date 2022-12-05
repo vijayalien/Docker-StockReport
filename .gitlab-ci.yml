@@ -1,0 +1,45 @@
+stages:
+  - data_extraction
+  - allure_generation
+  - deploy_report
+
+data_extraction_job:
+  stage: data_extraction
+  script:
+    - echo "Running tests..."
+    - gradle clean test
+  artifacts:
+    when: always
+    paths:
+      - allure-results/
+      - selenoid/screenRecordings/*.mp4
+    reports:
+      junit: build/test-results/test/**/TEST-*.xml
+
+allure_report:
+  stage: allure_generation
+  when: always
+  image: frankescobar/allure-docker-service
+  dependencies:
+    - data_extraction_job
+  script:
+    - allure generate allure-results --clean o allure-report
+  artifacts:
+    when: always
+    paths:
+      - allure-report/
+      - allure-results/
+  tags:
+    - docker
+
+pages:
+  stage: deploy_report
+  when: always
+  dependencies:
+    - allure_report
+  script:
+    - mv allure-report/ public/
+  artifacts:
+    paths:
+      - public
+    expire_in: 30 days
