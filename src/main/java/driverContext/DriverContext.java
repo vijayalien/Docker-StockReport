@@ -66,7 +66,7 @@ public class DriverContext {
     public RemoteWebDriver getChromeRemoteWebDriver(String currentTestSessionName) {
         RemoteWebDriver driver = null;
         ChromeOptions options = new ChromeOptions();
-        options.setCapability("browserVersion", "103.0");
+        options.setCapability("browserVersion", "104.0");
         options.setCapability("selenoid:options", new HashMap<String, Object>() {{
             put("name", currentTestSessionName);
             put("sessionTimeout", "15m");

@@ -1,6 +1,6 @@
 Feature:  Run MoneyControl page
 
-  Scenario: Test Moneycontorl website
+  Scenario: Test Moneycontrol website
 
     Given user redirects to moneycontrol website "MoneyControl"
     And user get the title
@@ -11,6 +11,6 @@ Feature:  Run MoneyControl page
     And user validate broker research page
     And user clicks on buy option
     And user fetch broker results details
-#    And user clicks on all stats
-#    And user validate all stats page
-#    And user clicks on price and volume increase
+    And user clicks on all stats
+    And user validate all stats page
+    And user clicks on price and volume increase

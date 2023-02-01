@@ -1,4 +1,4 @@
-version: "2.4"
+version: '3'
 services:
   selenoid:
     network_mode: bridge
@@ -14,7 +14,8 @@ services:
   selenoid-ui:
     network_mode: bridge
     image: aerokube/selenoid-ui:latest-release
-    ports:
-      - 8080:8080
     links:
       - selenoid
+    ports:
+      - "8080:8080"
+    command: ["--selenoid-uri", "http://selenoid:4444"]

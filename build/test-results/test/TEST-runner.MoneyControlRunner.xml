@@ -1,128 +1,468 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="runner.MoneyControlRunner" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-11-29T12:00:14" hostname="DESKTOP-SAB4HMH" time="2.173">
+<testsuite name="runner.MoneyControlRunner" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-08T13:57:56" hostname="DESKTOP-SAB4HMH" time="289.297">
   <properties/>
-  <testcase name="runScenario[0](&quot;Test Moneycontorl website&quot;, &quot;Run MoneyControl page&quot;)" classname="runner.MoneyControlRunner" time="2.173">
-    <failure message="io.cucumber.core.exception.CucumberException: Failed to instantiate class stepDefinitions.MoneyControlStepDefs" type="io.cucumber.core.exception.CucumberException">io.cucumber.core.exception.CucumberException: Failed to instantiate class stepDefinitions.MoneyControlStepDefs
-	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:67)
-	at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at runner.MoneyControlRunner.runScenario(MoneyControlRunner.java:29)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:135)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-Caused by: java.lang.reflect.InvocationTargetException
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53)
-	... 70 more
-Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Unable to parse remote response: 401 Unauthorized
- 
-Host info: host: 'DESKTOP-SAB4HMH', ip: '192.168.0.32'
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:130)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:139)
-	at driverContext.DriverContext.getChromeRemoteWebDriver(DriverContext.java:77)
-	at driverContext.DriverContext.getRemoteWebDriver(DriverContext.java:34)
-	at testBase.TestBase.&lt;init&gt;(TestBase.java:33)
-	at stepDefinitions.MoneyControlStepDefs.&lt;init&gt;(MoneyControlStepDefs.java:12)
-	... 75 more
-Caused by: org.openqa.selenium.json.JsonException: Unable to parse: 401 Unauthorized
-
-	at org.openqa.selenium.json.Json.toType(Json.java:57)
-	at org.openqa.selenium.json.Json.toType(Json.java:50)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:127)
-	... 87 more
-Caused by: org.openqa.selenium.json.JsonException: Expected to read a START_MAP but instead have: NUMBER. Last 0 characters read: 
-Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonInput.expect(JsonInput.java:307)
-	at org.openqa.selenium.json.JsonInput.beginObject(JsonInput.java:229)
-	at org.openqa.selenium.json.MapCoercer.lambda$apply$1(MapCoercer.java:64)
-	at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:145)
-	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
-	at org.openqa.selenium.json.Json.toType(Json.java:71)
-	at org.openqa.selenium.json.Json.toType(Json.java:55)
-	... 89 more
-</failure>
-  </testcase>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Nov 29, 2022 11:00:14 PM org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
+  <testcase name="runScenario[0](&quot;Test Moneycontorl website&quot;, &quot;Run MoneyControl page&quot;)" classname="runner.MoneyControlRunner" time="289.297"/>
+  <system-out><![CDATA[Business News LIVE Today: Latest Business News, Share Market News, Economy & Finance News | Moneycontrol
+[Failed Assert Collector] java.lang.AssertionError: [WebElement Helper] No such element exist on screen: <Proxy element for: DefaultElementLocator 'By.xpath: //button[@class='avp-button avp-close-button']'>.
+08 December
+Apollo Tyres
+Emkay Global Financial Services
+BUY
+297.85
+315.65
+345
+9.3%
+5.98%
+1.13%
+08 December
+Suprajit Eng
+Emkay Global Financial Services
+BUY
+334.50
+341.35
+450
+31.83%
+2.05%
+1.13%
+08 December
+AU Small Financ
+Motilal Oswal
+BUY
+671.80
+672.70
+750
+11.49%
+0.13%
+0.26%
+08 December
+Sun Pharma
+Sharekhan
+BUY
+1017.25
+980.95
+1300
+32.52%
+-3.57%
+0.26%
+07 December
+Guj State Petro
+Sharekhan
+BUY
+267.10
+267.30
+342
+27.95%
+0.07%
+-0.09%
+07 December
+Central Bank
+LKP Securities Limited
+BUY
+28.15
+31.60
+37
+17.09%
+12.26%
+0.26%
+06 December
+M&M Financial
+Sharekhan
+BUY
+241.00
+240.05
+275
+14.56%
+-0.39%
+-0.42%
+06 December
+HUL
+Sharekhan
+BUY
+2619.70
+2701.30
+3005
+11.24%
+3.11%
+-0.42%
+06 December
+HUL
+Sharekhan
+BUY
+2619.70
+2701.30
+3005
+11.24%
+3.11%
+-0.42%
+06 December
+Motherson SWI
+ICICIdirect.com
+BUY
+60.75
+60.05
+75
+24.9%
+-1.15%
+-0.42%
+06 December
+Mishra Dhatu Ni
+ICICIdirect.com
+BUY
+246.45
+236.20
+285
+20.66%
+-4.16%
+-0.42%
+05 December
+Repco Home
+Yes Securities
+BUY
+248.65
+242.20
+345
+42.44%
+-2.59%
+1.13%
+05 December
+PNC Infratech
+Yes Securities
+BUY
+253.55
+283.15
+396
+39.86%
+11.67%
+1.13%
+05 December
+KNR Construct
+Yes Securities
+BUY
+239.05
+270.00
+377
+39.63%
+12.95%
+1.13%
+05 December
+MOTHERSON
+Emkay Global Financial Services
+BUY
+74.00
+73.70
+94
+27.54%
+-0.41%
+-0.47%
+05 December
+ICICI Bank
+Emkay Global Financial Services
+BUY
+930.80
+931.55
+1225
+31.5%
+0.08%
+-0.47%
+05 December
+Aditya Birla F
+Motilal Oswal
+BUY
+317.20
+313.40
+380
+21.25%
+-1.2%
+-0.47%
+05 December
+ICICI Bank
+Motilal Oswal
+BUY
+930.80
+931.55
+1150
+23.45%
+0.08%
+-0.47%
+05 December
+Sheela Foam
+ICICIdirect.com
+BUY
+2625.05
+2610.60
+3300
+26.41%
+-0.55%
+-0.47%
+05 December
+ICICI Bank
+ICICIdirect.com
+BUY
+930.80
+931.55
+1090
+17.01%
+0.08%
+-0.47%
+05 December
+Polycab
+Sharekhan
+BUY
+2673.75
+2735.05
+3215
+17.55%
+2.29%
+-0.47%
+05 December
+Natco Pharma
+Geofin Comtrade
+BUY
+578.75
+573.40
+704
+22.78%
+-0.92%
+-0.42%
+02 December
+SBI
+Sharekhan
+BUY
+607.55
+611.70
+710
+16.07%
+0.68%
+-0.47%
+02 December
+Westlife Food
+Prabhudas Lilladher
+BUY
+718.55
+752.95
+847
+12.49%
+4.79%
+-1.13%
+02 December
+One 97 Paytm
+ICICI Securities
+BUY
+536.90
+508.40
+1285
+152.75%
+-5.31%
+-0.47%
+02 December
+Symphony
+Anand Rathi
+BUY
+917.95
+932.40
+1194
+28.06%
+1.57%
+-1.13%
+02 December
+J. K. Cement
+Motilal Oswal
+BUY
+3202.55
+3180.95
+3550
+11.6%
+-0.67%
+-1.13%
+02 December
+Westlife Food
+Emkay Global Financial Services
+BUY
+719.65
+752.95
+840
+11.56%
+4.63%
+-0.47%
+02 December
+Bandhan Bank
+Emkay Global Financial Services
+BUY
+235.60
+251.45
+300
+19.31%
+6.73%
+-1.13%
+02 December
+UNO Minda
+Emkay Global Financial Services
+BUY
+555.05
+537.00
+650
+21.04%
+-3.25%
+-1.13%
+01 December
+SBI Card
+Emkay Global Financial Services
+BUY
+824.60
+814.20
+1000
+22.82%
+-1.26%
+-0.84%
+01 December
+NESCO
+ICICIdirect.com
+BUY
+637.65
+638.00
+800
+25.39%
+0.05%
+-0.84%
+01 December
+Gland
+Sharekhan
+BUY
+1777.60
+1717.30
+2260
+31.6%
+-3.39%
+-0.84%
+01 December
+ICICI Bank
+Anand Rathi
+BUY
+953.40
+931.55
+1094
+17.44%
+-2.29%
+-0.84%
+30 November
+ABB India
+ICICIdirect.com
+BUY
+3033.10
+2989.55
+3635
+21.59%
+-1.44%
+0.95%
+30 November
+Bata India
+ICICIdirect.com
+BUY
+1700.00
+1677.00
+2065
+23.14%
+-1.35%
+0.95%
+30 November
+KNR Construct
+ICICIdirect.com
+BUY
+245.70
+270.00
+290
+7.41%
+9.89%
+0.95%
+30 November
+Apollo Tyres
+ICICIdirect.com
+BUY
+277.30
+315.65
+350
+10.88%
+13.83%
+0.95%
+30 November
+Hindustan Aeron
+ICICIdirect.com
+BUY
+2682.15
+2758.00
+3300
+19.65%
+2.83%
+0.95%
+30 November
+Time Techno
+ICICIdirect.com
+BUY
+102.20
+92.80
+125
+34.7%
+-9.2%
+0.95%
+30 November
+Motherson SWI
+ICICIdirect.com
+BUY
+60.65
+60.05
+75
+24.9%
+-0.99%
+0.95%
+30 November
+Aditya Birla F
+ICICIdirect.com
+BUY
+310.25
+313.40
+380
+21.25%
+1.02%
+-0.18%
+30 November
+Intellect Desig
+Hem Securities
+BUY
+457.15
+451.00
+524
+16.19%
+-1.35%
+0.11%
+29 November
+S Chand and Co
+Prabhudas Lilladher
+BUY
+164.50
+182.75
+220
+20.38%
+11.09%
+1.54%
+29 November
+Manappuram Fin
+Prabhudas Lilladher
+BUY
+116.65
+118.95
+144
+21.06%
+1.97%
+1.54%
+]]></system-out>
+  <system-err><![CDATA[Dec 09, 2022 12:57:56 AM org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
 INFO: Using OpenTelemetry for tracing
 ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
-Nov 29, 2022 11:00:15 PM org.openqa.selenium.remote.RemoteWebDriver checkNonW3CCapabilities
-WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [enableVNC, enableVideo, videoName]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+Dec 09, 2022 12:57:57 AM org.openqa.selenium.remote.RemoteWebDriver checkNonW3CCapabilities
+WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [chromeOptions]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+Dec 09, 2022 12:58:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Dec 09, 2022 12:58:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [chromeOptions]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
 ]]></system-err>
 </testsuite>
